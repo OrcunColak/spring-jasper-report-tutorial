@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 7.0.0.final using JasperReports Library version 7.0.0-b478feaa9aab4375eba71de77b4ca138ad2f62aa  -->
+<jasperReport name="Blank_A4" language="java" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2385a4f5-3779-4dca-9895-c6682d2a919c">
+    <property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+    <parameter name="P_MONTH" class="java.lang.String"/>
+    <parameter name="P_YEAR" class="java.lang.String"/>
+    <query language="sql"><![CDATA[]]></query>
+    <field name="userId" class="java.lang.String"/>
+    <field name="activityType" class="java.lang.String"/>
+    <field name="activityTime" class="java.lang.String"/>
+    <field name="ipAddress" class="java.lang.String"/>
+    <field name="deviceType" class="java.lang.String"/>
+    <field name="location" class="java.lang.String"/>
+    <field name="browserType" class="java.lang.String"/>
+    <field name="operatingSystem" class="java.lang.String"/>
+    <background splitType="Stretch"/>
+    <title height="48" splitType="Stretch">
+        <element kind="staticText" uuid="c89c2c18-55e5-4446-9a82-25e6f5c0f06b" x="170" y="0" width="250" height="40" fontSize="26.0">
+            <text><![CDATA[User Activity Report]]></text>
+        </element>
+    </title>
+    <pageHeader height="20" splitType="Stretch">
+        <element kind="textField" uuid="f98a5196-d2e6-44f9-97aa-65e3ce5c92fc" x="0" y="0" width="120" height="20">
+            <expression><![CDATA["MONTH "+$P{P_MONTH}]]></expression>
+        </element>
+        <element kind="textField" uuid="264db46d-a662-4b6a-b659-89912f4e7093" x="120" y="0" width="120" height="20">
+            <expression><![CDATA["YEAR "+$P{P_YEAR}]]></expression>
+        </element>
+    </pageHeader>
+    <columnHeader height="30" splitType="Stretch">
+        <element kind="staticText" uuid="33d063a8-53cd-47c2-ac6e-fc5e10c0e1fa" x="0" y="10" width="70" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[User ID]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="096f62de-e9cf-4eb1-9569-b474dd2bc5d0" x="70" y="10" width="80" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[Activity Type]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="e144d215-722b-42a0-9c4c-e9d4ad1e3a08" x="230" y="10" width="70" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[IP Address]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="d32f3554-1c78-43dd-9618-f02f8ecca6b3" x="300" y="10" width="70" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[Device Type]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="e44b90e9-3c69-43e3-a8d8-262c1af32d08" x="370" y="10" width="70" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[Location]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="30a6bd46-013a-42dd-8d02-0046b54df694" x="440" y="10" width="74" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[Browser Type]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="1f18e96c-5bca-4a9d-9192-f8caacb60d2d" x="514" y="10" width="41" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[OS]]></text>
+            <property name="com.jaspersoft.studio.unit.width" value="px"/>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+        <element kind="staticText" uuid="b150b5c6-b1d0-4142-b366-897aad526336" x="150" y="10" width="80" height="20" fontName="SansSerif" fontSize="11.0" hTextAlign="Center" vTextAlign="Middle">
+            <text><![CDATA[Activity Time]]></text>
+            <box padding="0">
+                <topPen lineWidth="0.5"/>
+                <leftPen lineWidth="0.5"/>
+                <bottomPen lineWidth="0.5"/>
+                <rightPen lineWidth="0.5"/>
+            </box>
+        </element>
+    </columnHeader>
+    <detail>
+        <band height="20" splitType="Stretch">
+            <element kind="textField" uuid="54d90e0d-3ebd-49e2-ad11-c1177887bb42" x="0" y="0" width="70" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{userId}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="a85f2022-27a6-44cc-bedc-8dcfae88041f" x="70" y="0" width="80" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{activityType}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="59d4a2f7-8724-4eaf-b9df-2ddcb434ae67" x="150" y="0" width="80" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{activityTime}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="598eff31-517f-42a2-9285-8a7304f5898e" x="230" y="0" width="70" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{ipAddress}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="09dcad81-7f6d-47ae-b26e-64560565dd5a" x="300" y="0" width="70" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{deviceType}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="8ee606b7-fa2b-4517-9ba2-16e6b111eee3" x="370" y="0" width="70" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{location}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="2c15f86e-d3c2-48e8-bfa8-79a4e52b2d4b" x="440" y="0" width="74" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{browserType}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+            <element kind="textField" uuid="32f657d8-0867-4df7-9c3e-16fcff6ea6d0" x="514" y="0" width="41" height="20" fontSize="8.0" hTextAlign="Center" vTextAlign="Middle">
+                <expression><![CDATA[$F{operatingSystem}]]></expression>
+                <property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c61c228-89fd-4310-b514-0522110739f0"/>
+                <property name="com.jaspersoft.studio.unit.width" value="px"/>
+                <box padding="0">
+                    <topPen lineWidth="0.5"/>
+                    <leftPen lineWidth="0.5"/>
+                    <bottomPen lineWidth="0.5"/>
+                    <rightPen lineWidth="0.5"/>
+                </box>
+            </element>
+        </band>
+    </detail>
+    <columnFooter splitType="Stretch"/>
+    <pageFooter height="30" splitType="Stretch">
+        <element kind="textField" uuid="51dd90d5-1007-42db-9e97-7131585b309f" x="355" y="0" width="100" height="30" hTextAlign="Right">
+            <expression><![CDATA["Page " + $V{PAGE_NUMBER}]]></expression>
+        </element>
+        <element kind="textField" uuid="80945c25-fde6-4116-8c2f-2e7d252c69f7" x="455" y="0" width="100" height="30" evaluationTime="Report" hTextAlign="Left">
+            <expression><![CDATA[" of " + $V{PAGE_NUMBER}]]></expression>
+        </element>
+    </pageFooter>
+    <summary height="7" splitType="Stretch"/>
+</jasperReport>
