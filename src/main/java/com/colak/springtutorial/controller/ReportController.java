@@ -1,6 +1,7 @@
 package com.colak.springtutorial.controller;
 
 import com.colak.springtutorial.service.JasperReportService;
+import lombok.RequiredArgsConstructor;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
@@ -10,7 +11,6 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleHtmlExporterOutput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.pdf.JRPdfExporter;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -25,10 +25,10 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
+@RequiredArgsConstructor
 public class ReportController {
 
-    @Autowired
-    private JasperReportService jasperReportService;
+    private final JasperReportService jasperReportService;
 
     // http://localhost:8080/generateReport?format=pdf
     // http://localhost:8080/generateReport?format=html
