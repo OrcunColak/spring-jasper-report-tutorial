@@ -4,6 +4,10 @@ Also see
 https://snowcloudbyte.medium.com/java-jasperreports-with-custom-font-29d2577cd012
 for custom fonts
 
+See
+https://satyacodes.medium.com/spring-boot-reporting-with-jasper-reports-d4ed3128f0fe
+for more examples
+
 # JasperCompileManager
 
 Used to compile a JRXML report template.
