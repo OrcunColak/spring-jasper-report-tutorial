@@ -1,6 +1,7 @@
-package com.colak.springtutorial.controller;
+package com.colak.springtutorial.useractivity.controller;
 
-import com.colak.springtutorial.service.JasperReportService;
+import com.colak.springtutorial.useractivity.dto.UserActivity;
+import com.colak.springtutorial.useractivity.service.JasperReportService;
 import lombok.RequiredArgsConstructor;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperPrint;

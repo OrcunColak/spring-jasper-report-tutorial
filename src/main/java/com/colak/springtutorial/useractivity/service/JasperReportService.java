@@ -1,4 +1,4 @@
-package com.colak.springtutorial.service;
+package com.colak.springtutorial.useractivity.service;
 
 import net.sf.jasperreports.engine.JRDataSource;
 import net.sf.jasperreports.engine.JRException;
@@ -16,7 +16,7 @@ public class JasperReportService {
 
     public JasperPrint generateReport(Map<String, Object> parameters, Object dataSource) throws JRException {
         // Load the .jrxml file
-        InputStream reportStream = getClass().getResourceAsStream("/reports/report.jrxml");
+        InputStream reportStream = getClass().getResourceAsStream("/useractivity/useractivity-report.jrxml");
         if (reportStream == null) {
             throw new JRException("Report template not found");
         }
